@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE map SYSTEM "http://java.sun.com/dtd/preferences.dtd">
+<map MAP_XML_VERSION="1.0">
+  <entry key="HISTORY_LINE_000" value="/open InfiniteListImpl.java"/>
+  <entry key="HISTORY_LINE_001" value="/open EmptyList.java"/>
+  <entry key="HISTORY_LINE_002" value="InfiniteList.iterate(1, x -&gt; x + 1).isEmpty()"/>
+  <entry key="HISTORY_LINE_003" value="InfiniteList.generate(() -&gt; 2).isEmpty()"/>
+  <entry key="HISTORY_LINE_004" value="InfiniteList.generate(() -&gt; 2).filter(x -&gt; x % 3 == 0).isEmpty()"/>
+  <entry key="HISTORY_LINE_005" value="InfiniteList.iterate(1, x -&gt; x + 1).map(x -&gt; 2).isEmpty()"/>
+  <entry key="HISTORY_LINE_006" value="InfiniteList.iterate(1, x -&gt; x + 1).filter(x -&gt; x % 2 == 0).isEmpty()"/>
+  <entry key="HISTORY_LINE_007" value="new EmptyList&lt;&gt;().isEmpty()"/>
+  <entry key="HISTORY_LINE_008" value="new EmptyList&lt;&gt;().map(x -&gt; 2).isEmpty()"/>
+  <entry key="HISTORY_LINE_009" value="new EmptyList&lt;&gt;().filter(x -&gt; true).isEmpty()"/>
+  <entry key="HISTORY_LINE_010" value="new EmptyList&lt;&gt;().filter(x -&gt; false).isEmpty()"/>
+  <entry key="HISTORY_LINE_011" value="InfiniteList.iterate(1, x -&gt; x + 1).limit(0).isEmpty()"/>
+  <entry key="HISTORY_LINE_012" value="InfiniteList.iterate(1, x -&gt; x + 1).limit(1).isEmpty()"/>
+  <entry key="HISTORY_LINE_013" value="InfiniteList.iterate(1, x -&gt; x + 1).limit(-1).isEmpty()"/>
+  <entry key="HISTORY_LINE_014" value="UnaryOperator&lt;Integer&gt; op = x -&gt; { System.out.printf(&quot;iterate: %d -&gt; %d\n&quot;, x, x + 1); return x + 1; };"/>
+  <entry key="HISTORY_LINE_015" value="InfiniteList.iterate(1, op).limit(0).isEmpty()"/>
+  <entry key="HISTORY_LINE_016" value="InfiniteList.iterate(1, op).limit(1).isEmpty()"/>
+  <entry key="HISTORY_LINE_017" value="InfiniteList.iterate(1, op).limit(2).isEmpty()"/>
+  <entry key="HISTORY_LINE_018" value="InfiniteList&lt;Integer&gt; list;"/>
+  <entry key="HISTORY_LINE_019" value="list = InfiniteList.iterate(1, op).limit(0).peek()"/>
+  <entry key="HISTORY_LINE_020" value="list = InfiniteList.iterate(1, op).limit(1).peek()"/>
+  <entry key="HISTORY_LINE_021" value="list = InfiniteList.iterate(1, op).limit(1).peek().peek()"/>
+  <entry key="HISTORY_LINE_022" value="list = InfiniteList.iterate(1, op).limit(2).peek().peek().peek()"/>
+  <entry key="HISTORY_LINE_023" value="list = InfiniteList.iterate(1, op).limit(2).limit(1).peek().peek()"/>
+  <entry key="HISTORY_LINE_024" value="list = InfiniteList.iterate(1, op).limit(1).limit(2).peek().peek()"/>
+  <entry key="HISTORY_LINE_025" value="InfiniteList.iterate(1, op).takeWhile(x -&gt; x &lt; 0).isEmpty()"/>
+  <entry key="HISTORY_LINE_026" value="InfiniteList.iterate(1, op).takeWhile(x -&gt; x &lt; 2).isEmpty()"/>
+  <entry key="HISTORY_LINE_027" value="list = InfiniteList.iterate(1, op).takeWhile(x -&gt; x &lt; 0).peek()"/>
+  <entry key="HISTORY_LINE_028" value="list = InfiniteList.iterate(1, op).takeWhile(x -&gt; x &lt; 2).peek().peek()"/>
+  <entry key="HISTORY_LINE_029" value="list = InfiniteList.iterate(1, op).takeWhile(x -&gt; x &lt; 2).takeWhile(x -&gt; x &lt; 0).peek()"/>
+  <entry key="HISTORY_LINE_030" value="list = InfiniteList.iterate(1, op).takeWhile(x -&gt; x &lt; 0).takeWhile(x -&gt; x &lt; 2).peek()"/>
+  <entry key="HISTORY_LINE_031" value="list = InfiniteList.iterate(1, op).takeWhile(x -&gt; x &lt; 5).takeWhile(x -&gt; x &lt; 2).peek().peek() "/>
+  <entry key="HISTORY_LINE_032" value="Predicate&lt;Integer&gt; lessThan5 = x -&gt; { System.out.printf(&quot;takeWhile: %d -&gt; %b\n&quot;, x, x &lt; 5); return x &lt; 5; }"/>
+  <entry key="HISTORY_LINE_033" value="list = InfiniteList.iterate(1, op).takeWhile(lessThan5).peek().peek()"/>
+  <entry key="HISTORY_LINE_034" value="/exit"/>
+  <entry key="HISTORY_LINE_035" value="InfiniteList.iterate(0, i -&gt; i + 1).limit(10)"/>
+  <entry key="HISTORY_LINE_036" value="InfiniteList.iterate(0, i -&gt; i + 1).limit(10).toArray()"/>
+  <entry key="HISTORY_LINE_037" value="InfiniteList.iterate(0, i -&gt; i + 1).filter(x -&gt; x % 2 == 0)limit(10).toArray()"/>
+  <entry key="HISTORY_LINE_038" value="InfiniteList.iterate(0, i -&gt; i + 1).filter(x -&gt; x % 2 == 0).limit(10).toArray()"/>
+  <entry key="HISTORY_LINE_039" value="/exi"/>
+  <entry key="HISTORY_LINE_040" value="/open Lazy.java"/>
+  <entry key="HISTORY_LINE_041" value="/open InfiniteList.java"/>
+  <entry key="HISTORY_LINE_042" value="/open InfiniteListImpl.java"/>
+  <entry key="HISTORY_LINE_043" value="/open EmptyList.java"/>
+  <entry key="HISTORY_LINE_044" value="InfiniteList&lt;Integer&gt; list, list2"/>
+  <entry key="HISTORY_LINE_045" value="list = InfiniteList.generate(() -&gt; 1).map(x -&gt; x * 2)"/>
+  <entry key="HISTORY_LINE_046" value="list2 = list.peek()"/>
+  <entry key="HISTORY_LINE_047" value="list2 = list.peek()"/>
+  <entry key="HISTORY_LINE_048" value="InfiniteList.generate(() -&gt; 1).map(x -&gt; x * 2) instanceof InfiniteListImpl"/>
+  <entry key="HISTORY_LINE_049" value="list = InfiniteList.generate(() -&gt; 1).map(x -&gt; x * 2).peek()"/>
+  <entry key="HISTORY_LINE_050" value="list = InfiniteList.generate(() -&gt; 1).map(x -&gt; x * 2).peek().peek()"/>
+  <entry key="HISTORY_LINE_051" value="list = InfiniteList.iterate(1, x -&gt; x + 1).map(x -&gt; x * 2).peek().peek()"/>
+  <entry key="HISTORY_LINE_052" value="Supplier&lt;Integer&gt; generator = () -&gt; { System.out.println(&quot;generate: 1&quot;); return 1; }"/>
+  <entry key="HISTORY_LINE_053" value="Function&lt;Integer,Integer&gt; doubler = x -&gt; { System.out.printf(&quot;map: %d -&gt; %d\n&quot;, x, x * 2); return x * 2; };"/>
+  <entry key="HISTORY_LINE_054" value="Function&lt;Integer,Integer&gt; oneLess = x -&gt; { System.out.printf(&quot;map: %d -&gt; %d\n&quot;, x, x - 1); return x - 1; };"/>
+  <entry key="HISTORY_LINE_055" value="list = InfiniteList.generate(generator).map(doubler).peek().peek()"/>
+  <entry key="HISTORY_LINE_056" value="list = InfiniteList.generate(generator).map(doubler).map(oneLess).peek().peek()"/>
+  <entry key="HISTORY_LINE_057" value="list = InfiniteList.iterate(1, x -&gt; x + 1).filter(x -&gt; x % 2 == 0)"/>
+  <entry key="HISTORY_LINE_058" value="list2 = list.peek()"/>
+  <entry key="HISTORY_LINE_059" value="list2 = list.peek()"/>
+  <entry key="HISTORY_LINE_060" value="InfiniteList.iterate(1, x -&gt; x + 1).filter(x -&gt; x % 2 == 0) instanceof InfiniteListImpl"/>
+  <entry key="HISTORY_LINE_061" value="list = InfiniteList.iterate(1, x -&gt; x + 1).filter(x -&gt; x % 2 == 0).peek().peek()"/>
+  <entry key="HISTORY_LINE_062" value="list = InfiniteList.iterate(1, x -&gt; x + 1).filter(x -&gt; x % 2 == 0).filter(x -&gt; x &lt; 4).peek().peek().peek().peek()"/>
+  <entry key="HISTORY_LINE_063" value="Predicate&lt;Integer&gt; isEven = x -&gt; { System.out.printf(&quot;filter: %d -&gt; %b\n&quot;, x, x % 2 == 0); return x % 2 == 0; }"/>
+  <entry key="HISTORY_LINE_064" value="Predicate&lt;Integer&gt; lessThan10 = x -&gt; { System.out.printf(&quot;filter: %d -&gt; %b\n&quot;, x, x &lt; 10); return x &lt; 10; }"/>
+  <entry key="HISTORY_LINE_065" value="UnaryOperator&lt;Integer&gt; op = x -&gt; { System.out.printf(&quot;iterate: %d -&gt; %d\n&quot;, x, x + 1); return x + 1; };"/>
+  <entry key="HISTORY_LINE_066" value="list = InfiniteList.iterate(1, op).filter(isEven).peek().peek()"/>
+  <entry key="HISTORY_LINE_067" value="list = InfiniteList.iterate(1, op).filter(isEven).filter(lessThan10).peek().peek()"/>
+  <entry key="HISTORY_LINE_068" value="list = InfiniteList.iterate(1, op).map(doubler).filter(isEven).filter(lessThan10).peek().peek()"/>
+  <entry key="HISTORY_LINE_069" value="list = InfiniteList.iterate(1, op).filter(isEven).map(doubler).filter(lessThan10).peek().peek()"/>
+  <entry key="HISTORY_LINE_070" value="list = InfiniteList.iterate(1, op).filter(isEven).filter(lessThan10).map(doubler).peek().peek()"/>
+  <entry key="HISTORY_LINE_071" value="/exit"/>
+  <entry key="HISTORY_LINE_072" value="/open Lazy.java"/>
+  <entry key="HISTORY_LINE_073" value="/open InfiniteList.java"/>
+  <entry key="HISTORY_LINE_074" value="/open InfiniteListImpl.java"/>
+  <entry key="HISTORY_LINE_075" value="/open EmptyList.java"/>
+  <entry key="HISTORY_LINE_076" value="InfiniteList&lt;Integer&gt; list, list2"/>
+  <entry key="HISTORY_LINE_077" value="list = InfiniteList.generate(() -&gt; 1).map(x -&gt; x * 2)"/>
+  <entry key="HISTORY_LINE_078" value="list2 = list.peek()"/>
+  <entry key="HISTORY_LINE_079" value="list2 = list.peek()"/>
+  <entry key="HISTORY_LINE_080" value="InfiniteList.generate(() -&gt; 1).map(x -&gt; x * 2) instanceof InfiniteListImpl"/>
+  <entry key="HISTORY_LINE_081" value="list = InfiniteList.generate(() -&gt; 1).map(x -&gt; x * 2).peek()"/>
+  <entry key="HISTORY_LINE_082" value="list = InfiniteList.generate(() -&gt; 1).map(x -&gt; x * 2).peek().peek()"/>
+  <entry key="HISTORY_LINE_083" value="list = InfiniteList.iterate(1, x -&gt; x + 1).map(x -&gt; x * 2).peek().peek()"/>
+  <entry key="HISTORY_LINE_084" value="Supplier&lt;Integer&gt; generator = () -&gt; { System.out.println(&quot;generate: 1&quot;); return 1; }"/>
+  <entry key="HISTORY_LINE_085" value="Function&lt;Integer,Integer&gt; doubler = x -&gt; { System.out.printf(&quot;map: %d -&gt; %d\n&quot;, x, x * 2); return x * 2; };"/>
+  <entry key="HISTORY_LINE_086" value="Function&lt;Integer,Integer&gt; oneLess = x -&gt; { System.out.printf(&quot;map: %d -&gt; %d\n&quot;, x, x - 1); return x - 1; };"/>
+  <entry key="HISTORY_LINE_087" value="list = InfiniteList.generate(generator).map(doubler).peek().peek()"/>
+  <entry key="HISTORY_LINE_088" value="list = InfiniteList.generate(generator).map(doubler).map(oneLess).peek().peek()"/>
+  <entry key="HISTORY_LINE_089" value="list = InfiniteList.iterate(1, x -&gt; x + 1).filter(x -&gt; x % 2 == 0)"/>
+  <entry key="HISTORY_LINE_090" value="list2 = list.peek()"/>
+  <entry key="HISTORY_LINE_091" value="list2 = list.peek()"/>
+  <entry key="HISTORY_LINE_092" value="InfiniteList.iterate(1, x -&gt; x + 1).filter(x -&gt; x % 2 == 0) instanceof InfiniteListImpl"/>
+  <entry key="HISTORY_LINE_093" value="list = InfiniteList.iterate(1, x -&gt; x + 1).filter(x -&gt; x % 2 == 0).peek().peek()"/>
+  <entry key="HISTORY_LINE_094" value="list = InfiniteList.iterate(1, x -&gt; x + 1).filter(x -&gt; x % 2 == 0).filter(x -&gt; x &lt; 4).peek().peek().peek().peek()"/>
+  <entry key="HISTORY_LINE_095" value="Predicate&lt;Integer&gt; isEven = x -&gt; { System.out.printf(&quot;filter: %d -&gt; %b\n&quot;, x, x % 2 == 0); return x % 2 == 0; }"/>
+  <entry key="HISTORY_LINE_096" value="Predicate&lt;Integer&gt; lessThan10 = x -&gt; { System.out.printf(&quot;filter: %d -&gt; %b\n&quot;, x, x &lt; 10); return x &lt; 10; }"/>
+  <entry key="HISTORY_LINE_097" value="UnaryOperator&lt;Integer&gt; op = x -&gt; { System.out.printf(&quot;iterate: %d -&gt; %d\n&quot;, x, x + 1); return x + 1; };"/>
+  <entry key="HISTORY_LINE_098" value="list = InfiniteList.iterate(1, op).filter(isEven).peek().peek()"/>
+  <entry key="HISTORY_LINE_099" value="list = InfiniteList.iterate(1, op).filter(isEven).filter(lessThan10).peek().peek()"/>
+  <entry key="HISTORY_LINE_100" value="list = InfiniteList.iterate(1, op).map(doubler).filter(isEven).filter(lessThan10).peek().peek()"/>
+  <entry key="HISTORY_LINE_101" value="list = InfiniteList.iterate(1, op).filter(isEven).map(doubler).filter(lessThan10).peek().peek()"/>
+  <entry key="HISTORY_LINE_102" value="list = InfiniteList.iterate(1, op).filter(isEven).filter(lessThan10).map(doubler).peek().peek()"/>
+  <entry key="HISTORY_LINE_103" value="/exit"/>
+  <entry key="HISTORY_LINE_104" value="/open Lazy.java"/>
+  <entry key="HISTORY_LINE_105" value="/open InfiniteList.java"/>
+  <entry key="HISTORY_LINE_106" value="/open InfiniteListImpl.java"/>
+  <entry key="HISTORY_LINE_107" value="/open EmptyList.java"/>
+  <entry key="HISTORY_LINE_108" value="InfiniteList&lt;Integer&gt; list, list2"/>
+  <entry key="HISTORY_LINE_109" value="list = InfiniteList.generate(() -&gt; 1).map(x -&gt; x * 2)"/>
+  <entry key="HISTORY_LINE_110" value="list2 = list.peek()"/>
+  <entry key="HISTORY_LINE_111" value="list2 = list.peek()"/>
+  <entry key="HISTORY_LINE_112" value="InfiniteList.generate(() -&gt; 1).map(x -&gt; x * 2) instanceof InfiniteListImpl"/>
+  <entry key="HISTORY_LINE_113" value="list = InfiniteList.generate(() -&gt; 1).map(x -&gt; x * 2).peek()"/>
+  <entry key="HISTORY_LINE_114" value="list = InfiniteList.generate(() -&gt; 1).map(x -&gt; x * 2).peek().peek()"/>
+  <entry key="HISTORY_LINE_115" value="list = InfiniteList.iterate(1, x -&gt; x + 1).map(x -&gt; x * 2).peek().peek()"/>
+  <entry key="HISTORY_LINE_116" value="Supplier&lt;Integer&gt; generator = () -&gt; { System.out.println(&quot;generate: 1&quot;); return 1; }"/>
+  <entry key="HISTORY_LINE_117" value="Function&lt;Integer,Integer&gt; doubler = x -&gt; { System.out.printf(&quot;map: %d -&gt; %d\n&quot;, x, x * 2); return x * 2; };"/>
+  <entry key="HISTORY_LINE_118" value="Function&lt;Integer,Integer&gt; oneLess = x -&gt; { System.out.printf(&quot;map: %d -&gt; %d\n&quot;, x, x - 1); return x - 1; };"/>
+  <entry key="HISTORY_LINE_119" value="list = InfiniteList.generate(generator).map(doubler).peek().peek()"/>
+  <entry key="HISTORY_LINE_120" value="list = InfiniteList.generate(generator).map(doubler).map(oneLess).peek().peek()"/>
+  <entry key="HISTORY_LINE_121" value="list = InfiniteList.iterate(1, x -&gt; x + 1).filter(x -&gt; x % 2 == 0)"/>
+  <entry key="HISTORY_LINE_122" value="list2 = list.peek()"/>
+  <entry key="HISTORY_LINE_123" value="list2 = list.peek()"/>
+  <entry key="HISTORY_LINE_124" value="InfiniteList.iterate(1, x -&gt; x + 1).filter(x -&gt; x % 2 == 0) instanceof InfiniteListImpl"/>
+  <entry key="HISTORY_LINE_125" value="list = InfiniteList.iterate(1, x -&gt; x + 1).filter(x -&gt; x % 2 == 0).peek().peek()"/>
+  <entry key="HISTORY_LINE_126" value="list = InfiniteList.iterate(1, x -&gt; x + 1).filter(x -&gt; x % 2 == 0).filter(x -&gt; x &lt; 4).peek().peek().peek().peek()"/>
+  <entry key="HISTORY_LINE_127" value="Predicate&lt;Integer&gt; isEven = x -&gt; { System.out.printf(&quot;filter: %d -&gt; %b\n&quot;, x, x % 2 == 0); return x % 2 == 0; }"/>
+  <entry key="HISTORY_LINE_128" value="Predicate&lt;Integer&gt; lessThan10 = x -&gt; { System.out.printf(&quot;filter: %d -&gt; %b\n&quot;, x, x &lt; 10); return x &lt; 10; }"/>
+  <entry key="HISTORY_LINE_129" value="UnaryOperator&lt;Integer&gt; op = x -&gt; { System.out.printf(&quot;iterate: %d -&gt; %d\n&quot;, x, x + 1); return x + 1; };"/>
+  <entry key="HISTORY_LINE_130" value="list = InfiniteList.iterate(1, op).filter(isEven).peek().peek()"/>
+  <entry key="HISTORY_LINE_131" value="list = InfiniteList.iterate(1, op).filter(isEven).filter(lessThan10).peek().peek()"/>
+  <entry key="HISTORY_LINE_132" value="list = InfiniteList.iterate(1, op).map(doubler).filter(isEven).filter(lessThan10).peek().peek()"/>
+  <entry key="HISTORY_LINE_133" value="list = InfiniteList.iterate(1, op).filter(isEven).map(doubler).filter(lessThan10).peek().peek()"/>
+  <entry key="HISTORY_LINE_134" value="list = InfiniteList.iterate(1, op).filter(isEven).filter(lessThan10).map(doubler).peek().peek()"/>
+  <entry key="HISTORY_LINE_135" value="/exit"/>
+  <entry key="HISTORY_LINE_136" value="/open Lazy.java"/>
+  <entry key="HISTORY_LINE_137" value="/open InfiniteList.java"/>
+  <entry key="HISTORY_LINE_138" value="/open InfiniteListImpl.java"/>
+  <entry key="HISTORY_LINE_139" value="/open EmptyList.java"/>
+  <entry key="HISTORY_LINE_140" value="InfiniteList&lt;Integer&gt; list, list2"/>
+  <entry key="HISTORY_LINE_141" value="list = InfiniteList.generate(() -&gt; 1).map(x -&gt; x * 2)"/>
+  <entry key="HISTORY_LINE_142" value="list2 = list.peek()"/>
+  <entry key="HISTORY_LINE_143" value="list2 = list.peek()"/>
+  <entry key="HISTORY_LINE_144" value="InfiniteList.generate(() -&gt; 1).map(x -&gt; x * 2) instanceof InfiniteListImpl"/>
+  <entry key="HISTORY_LINE_145" value="list = InfiniteList.generate(() -&gt; 1).map(x -&gt; x * 2).peek()"/>
+  <entry key="HISTORY_LINE_146" value="list = InfiniteList.generate(() -&gt; 1).map(x -&gt; x * 2).peek().peek()"/>
+  <entry key="HISTORY_LINE_147" value="list = InfiniteList.iterate(1, x -&gt; x + 1).map(x -&gt; x * 2).peek().peek()"/>
+  <entry key="HISTORY_LINE_148" value="Supplier&lt;Integer&gt; generator = () -&gt; { System.out.println(&quot;generate: 1&quot;); return 1; }"/>
+  <entry key="HISTORY_LINE_149" value="Function&lt;Integer,Integer&gt; doubler = x -&gt; { System.out.printf(&quot;map: %d -&gt; %d\n&quot;, x, x * 2); return x * 2; };"/>
+  <entry key="HISTORY_LINE_150" value="Function&lt;Integer,Integer&gt; oneLess = x -&gt; { System.out.printf(&quot;map: %d -&gt; %d\n&quot;, x, x - 1); return x - 1; };"/>
+  <entry key="HISTORY_LINE_151" value="list = InfiniteList.generate(generator).map(doubler).peek().peek()"/>
+  <entry key="HISTORY_LINE_152" value="list = InfiniteList.generate(generator).map(doubler).map(oneLess).peek().peek()"/>
+  <entry key="HISTORY_LINE_153" value="list = InfiniteList.iterate(1, x -&gt; x + 1).filter(x -&gt; x % 2 == 0)"/>
+  <entry key="HISTORY_LINE_154" value="list2 = list.peek()"/>
+  <entry key="HISTORY_LINE_155" value="list2 = list.peek()"/>
+  <entry key="HISTORY_LINE_156" value="InfiniteList.iterate(1, x -&gt; x + 1).filter(x -&gt; x % 2 == 0) instanceof InfiniteListImpl"/>
+  <entry key="HISTORY_LINE_157" value="list = InfiniteList.iterate(1, x -&gt; x + 1).filter(x -&gt; x % 2 == 0).peek().peek()"/>
+  <entry key="HISTORY_LINE_158" value="list = InfiniteList.iterate(1, x -&gt; x + 1).filter(x -&gt; x % 2 == 0).filter(x -&gt; x &lt; 4).peek().peek().peek().peek()"/>
+  <entry key="HISTORY_LINE_159" value="Predicate&lt;Integer&gt; isEven = x -&gt; { System.out.printf(&quot;filter: %d -&gt; %b\n&quot;, x, x % 2 == 0); return x % 2 == 0; }"/>
+  <entry key="HISTORY_LINE_160" value="Predicate&lt;Integer&gt; lessThan10 = x -&gt; { System.out.printf(&quot;filter: %d -&gt; %b\n&quot;, x, x &lt; 10); return x &lt; 10; }"/>
+  <entry key="HISTORY_LINE_161" value="UnaryOperator&lt;Integer&gt; op = x -&gt; { System.out.printf(&quot;iterate: %d -&gt; %d\n&quot;, x, x + 1); return x + 1; };"/>
+  <entry key="HISTORY_LINE_162" value="list = InfiniteList.iterate(1, op).filter(isEven).peek().peek()"/>
+  <entry key="HISTORY_LINE_163" value="list = InfiniteList.iterate(1, op).filter(isEven).filter(lessThan10).peek().peek()"/>
+  <entry key="HISTORY_LINE_164" value="list = InfiniteList.iterate(1, op).map(doubler).filter(isEven).filter(lessThan10).peek().peek()"/>
+  <entry key="HISTORY_LINE_165" value="list = InfiniteList.iterate(1, op).filter(isEven).map(doubler).filter(lessThan10).peek().peek()"/>
+  <entry key="HISTORY_LINE_166" value="list = InfiniteList.iterate(1, op).filter(isEven).filter(lessThan10).map(doubler).peek().peek()"/>
+  <entry key="HISTORY_LINE_167" value="/exit"/>
+  <entry key="HISTORY_LINE_168" value="/open Lazy.java"/>
+  <entry key="HISTORY_LINE_169" value="/open InfiniteList.java"/>
+  <entry key="HISTORY_LINE_170" value="/open InfiniteListImpl.java"/>
+  <entry key="HISTORY_LINE_171" value="/open EmptyList.java"/>
+  <entry key="HISTORY_LINE_172" value="InfiniteList&lt;Integer&gt; list, list2"/>
+  <entry key="HISTORY_LINE_173" value="list = InfiniteList.generate(() -&gt; 1).map(x -&gt; x * 2)"/>
+  <entry key="HISTORY_LINE_174" value="list2 = list.peek()"/>
+  <entry key="HISTORY_LINE_175" value="list2 = list.peek()"/>
+  <entry key="HISTORY_LINE_176" value="InfiniteList.generate(() -&gt; 1).map(x -&gt; x * 2) instanceof InfiniteListImpl"/>
+  <entry key="HISTORY_LINE_177" value="list = InfiniteList.generate(() -&gt; 1).map(x -&gt; x * 2).peek()"/>
+  <entry key="HISTORY_LINE_178" value="list = InfiniteList.generate(() -&gt; 1).map(x -&gt; x * 2).peek().peek()"/>
+  <entry key="HISTORY_LINE_179" value="list = InfiniteList.iterate(1, x -&gt; x + 1).map(x -&gt; x * 2).peek().peek()"/>
+  <entry key="HISTORY_LINE_180" value="Supplier&lt;Integer&gt; generator = () -&gt; { System.out.println(&quot;generate: 1&quot;); return 1; }"/>
+  <entry key="HISTORY_LINE_181" value="Function&lt;Integer,Integer&gt; doubler = x -&gt; { System.out.printf(&quot;map: %d -&gt; %d\n&quot;, x, x * 2); return x * 2; };"/>
+  <entry key="HISTORY_LINE_182" value="Function&lt;Integer,Integer&gt; oneLess = x -&gt; { System.out.printf(&quot;map: %d -&gt; %d\n&quot;, x, x - 1); return x - 1; };"/>
+  <entry key="HISTORY_LINE_183" value="list = InfiniteList.generate(generator).map(doubler).peek().peek()"/>
+  <entry key="HISTORY_LINE_184" value="list = InfiniteList.generate(generator).map(doubler).map(oneLess).peek().peek()"/>
+  <entry key="HISTORY_LINE_185" value="list = InfiniteList.iterate(1, x -&gt; x + 1).filter(x -&gt; x % 2 == 0)"/>
+  <entry key="HISTORY_LINE_186" value="list2 = list.peek()"/>
+  <entry key="HISTORY_LINE_187" value="list2 = list.peek()"/>
+  <entry key="HISTORY_LINE_188" value="InfiniteList.iterate(1, x -&gt; x + 1).filter(x -&gt; x % 2 == 0) instanceof InfiniteListImpl"/>
+  <entry key="HISTORY_LINE_189" value="list = InfiniteList.iterate(1, x -&gt; x + 1).filter(x -&gt; x % 2 == 0).peek().peek()"/>
+  <entry key="HISTORY_LINE_190" value="list = InfiniteList.iterate(1, x -&gt; x + 1).filter(x -&gt; x % 2 == 0).filter(x -&gt; x &lt; 4).peek().peek().peek().peek()"/>
+  <entry key="HISTORY_LINE_191" value="Predicate&lt;Integer&gt; isEven = x -&gt; { System.out.printf(&quot;filter: %d -&gt; %b\n&quot;, x, x % 2 == 0); return x % 2 == 0; }"/>
+  <entry key="HISTORY_LINE_192" value="import java.util.stream.;"/>
+  <entry key="HISTORY_LINE_193" value="import java.util.stream*;"/>
+  <entry key="HISTORY_LINE_194" value="import java.util.stream.*;"/>
+  <entry key="HISTORY_LINE_195" value="/ex"/>
+  <entry key="HISTORY_LINE_196" value="Stream s = Stream.iterate(1, i -&gt; i + 1).limit(5)"/>
+  <entry key="HISTORY_LINE_197" value="s.map(x -&gt; Stream.iterate(x, t -&gt; t &gt;= x, i -&gt; i + 1).map(s -&gt; s.toString()).reduce((f,s) -&gt; s + f).get())"/>
+  <entry key="HISTORY_LINE_198" value="s.forEach(System.out::println)"/>
+  <entry key="HISTORY_LINE_199" value="Stream s = Stream.iterate(1, i -&gt; i + 1).limit(5)"/>
+  <entry key="HISTORY_LINE_200" value="s.map(x -&gt; Stream.iterate(x, t -&gt; t &gt;= 1, i -&gt; i - 1).map(s -&gt; s.toString()).reduce((f,s) -&gt; s + f).get())"/>
+  <entry key="HISTORY_LINE_201" value="s.map(x -&gt; Stream.iterate(x, t -&gt; t &gt;= 1, i -&gt; i - 1).map(s -&gt; s.toString()).reduce((f,s) -&gt; s + f).get())"/>
+  <entry key="HISTORY_LINE_202" value="s.map(x -&gt; Stream.iterate(x, t -&gt; t &lt; x, i -&gt; i - 1).map(s -&gt; s.toString()).reduce((f,s) -&gt; s + f).get())"/>
+  <entry key="HISTORY_LINE_203" value="s.map(x -&gt; Stream.iterate(x, t -&gt; t &lt; x, i -&gt; i--).map(s -&gt; s.toString()).reduce((f,s) -&gt; s + f).get())"/>
+  <entry key="HISTORY_LINE_204" value="s.map(x -&gt; Stream.iterate(x, t -&gt; t &gt; x, i -&gt; i - 1).map(s -&gt; s.toString()).reduce((f,s) -&gt; s + f).get())"/>
+  <entry key="HISTORY_LINE_205" value="s.map(x -&gt; Stream.iterate(x, i -&gt; i -1).limit(x).map(s -&gt; s.toString()).reduce((f,s) -&gt; s + f).get())"/>
+  <entry key="HISTORY_LINE_206" value="Stream.iterate(1, i -&gt; i + 1).limit(5).forEach(System.out::println)"/>
+  <entry key="HISTORY_LINE_207" value="Stream.iterate(1, i -&gt; i + 1).limit(5).map(x -&gt; (Integer) x)"/>
+  <entry key="HISTORY_LINE_208" value="Stream.iterate(1, i -&gt; i + 1).limit(5).map(x -&gt; (Integer) x).forEach(System.out::println)"/>
+  <entry key="HISTORY_LINE_209" value="String s = Stream.iterate(1, i -&gt; i + 1).limit(5).map(x -&gt; (Integer) x)"/>
+  <entry key="HISTORY_LINE_210" value="Stream s = Stream.iterate(1, i -&gt; i + 1).limit(5).map(x -&gt; (Integer) x)"/>
+  <entry key="HISTORY_LINE_211" value="s.map(x -&gt; Stream.iterate(x, t -&gt; t &gt; x, i -&gt; i - 1).map(s -&gt; s.toString()).reduce((f,s) -&gt; s + f).get())"/>
+  <entry key="HISTORY_LINE_212" value="Stream s = Stream.iterate(1, i -&gt; i + 1).limit(5).map(x -&gt; (int) x)"/>
+  <entry key="HISTORY_LINE_213" value="s.map(x -&gt; Stream.iterate(x, t -&gt; t &gt; x, i -&gt; i - 1).map(s -&gt; s.toString()).reduce((f,s) -&gt; s + f).get())\\"/>
+  <entry key="HISTORY_LINE_214" value="s.map(x -&gt; Stream.iterate(x, t -&gt; t &gt; x, i -&gt; i - 1).map(s -&gt; s.toString()).reduce((f,s) -&gt; s + f).get())"/>
+  <entry key="HISTORY_LINE_215" value="IntStream s = IntStream.iterate(1, i -&gt; i + 1).limit(5)"/>
+  <entry key="HISTORY_LINE_216" value="s.map(x -&gt; Stream.iterate(x, t -&gt; t &gt; x, p -&gt; p - 1).map(q -&gt; q.toString()).reduce((f,s) -&gt; s + f).get())"/>
+  <entry key="HISTORY_LINE_217" value="Stream s = Stream.iterate(1, i -&gt; i + 1).limit(5).reduce((f,s) -&gt; f + s)"/>
+  <entry key="HISTORY_LINE_218" value="Stream.iterate(1, i -&gt; i + 1).limit(5).reduce((f,s) -&gt; f + s).get()"/>
+  <entry key="HISTORY_LINE_219" value="Stream.iterate(1, i -&gt; i + 1).limit(5).map(x -&gt; Stream.iterate(x, t -&gt; t &gt; x, c -&gt; c - 1).map(String::valueOf).reduce((f,s) -&gt; s + f)).get())"/>
+  <entry key="HISTORY_LINE_220" value="Stream.iterate(1, i -&gt; i + 1).limit(5).map(x -&gt; Stream.iterate(x, t -&gt; t &gt; x, c -&gt; c - 1).map(String::valueOf).reduce((f,s) -&gt; s + f)))"/>
+  <entry key="HISTORY_LINE_221" value="Stream.iterate(1, i -&gt; i + 1).limit(5).map(x -&gt; Stream.iterate(x, t -&gt; t &gt; x, c -&gt; c - 1).map(String::valueOf).reduce((f,s) -&gt; s + f));)"/>
+  <entry key="HISTORY_LINE_222" value="Stream.iterate(1, i -&gt; i + 1).limit(5).map(x -&gt; Stream.iterate(x, t -&gt; t &gt; x, c -&gt; c - 1).map(String::valueOf).reduce((f,s) -&gt; s + f));"/>
+  <entry key="HISTORY_LINE_223" value="Stream.iterate(1, i -&gt; i + 1).limit(5).map(x -&gt; Stream.iterate(x, t -&gt; t &gt; x, c -&gt; c - 1).map(String::valueOf).reduce((f,s) -&gt; s + f)).forEach(System.out::println)"/>
+  <entry key="HISTORY_LINE_224" value="Stream.iterate(1, i -&gt; i + 1).limit(5).map(x -&gt; Stream.iterate(x, t -&gt; t &gt; x, c -&gt; c - 1).map(s -&gt; s.toString()).reduce((f,s) -&gt; s + f)).forEach(System.out::println)"/>
+  <entry key="HISTORY_LINE_225" value="Stream.iterate(1, i -&gt; i + 1).limit(5).map(x -&gt; Stream.iterate(x, t -&gt; t &lt; x, c -&gt; c - 1).map(s -&gt; s.toString()).reduce((f,s) -&gt; s + f)).forEach(System.out::println)"/>
+  <entry key="HISTORY_LINE_226" value="Stream.iterate(1, i -&gt; i + 1).limit(5).map(x -&gt; Stream.iterate(x, t -&gt; t &lt;= x , c -&gt; c - 1).map(s -&gt; s.toString()).reduce((f,s) -&gt; s + f)).forEach(System.out::println)"/>
+  <entry key="HISTORY_LINE_227" value="Stream.iterate(1, i -&gt; i + 1).limit(5).map(x -&gt; Stream.iterate(x, t -&gt; t &lt;= x , c -&gt; c - 1).map(s -&gt; s.toString()).reduce((f,s) -&gt; s + f)).forEach(System.out::println)"/>
+  <entry key="HISTORY_LINE_228" value="Stream.iterate(1, i -&gt; i + 1).limit(5).map(x -&gt; Stream.iterate(x, t -&gt; t &lt; x, c -&gt; c - 1).map(s -&gt; s.toString()).reduce((f,s) -&gt; s + f)).forEach(System.out::println\"/>
+  <entry key="HISTORY_LINE_229" value="Stream.iterate(1, i -&gt; i + 1).limit(5).map(x -&gt; Stream.iterate(x, t -&gt; t &gt;= 1, c -&gt; c - 1).map(s -&gt; s.toString()).reduce((f,s) -&gt; s + f)).forEach(System.out::println\"/>
+  <entry key="HISTORY_LINE_230" value=")\"/>
+  <entry key="HISTORY_LINE_231" value="Stream.iterate(1, i -&gt; i + 1).limit(5).map(x -&gt; Stream.iterate(x, t -&gt; t &gt;= 1, c -&gt; c - 1).map(s -&gt; s.toString()).reduce((f,s) -&gt; f + s)).forEach(System.out::println\"/>
+  <entry key="HISTORY_LINE_232" value=")\"/>
+  <entry key="HISTORY_LINE_233" value="Stream.iterate(1, i -&gt; i + 1).limit(5).map(x -&gt; Stream.iterate(x, t -&gt; t &gt;= 1, c -&gt; c - 1).map(s -&gt; s.toString()).reduce((f,s) -&gt; f + s).get()).forEach(System.out::println\"/>
+  <entry key="HISTORY_LINE_234" value=")\"/>
+  <entry key="HISTORY_LINE_235" value="/exi"/>
+  <entry key="HISTORY_LINE_236" value="Stream.iterate(1, i -&gt; i + 1).limit(5).map(x -&gt; Stream.iterate(x, t -&gt; t &gt;= 1, c -&gt; c - 1).map(s -&gt; s.toString()).reduce((f,s) -&gt; f + s).get()).collect(Collectors.joining(&quot; &quot;))"/>
+  <entry key="HISTORY_LINE_237" value="/exi"/>
+  <entry key="HISTORY_LINE_238" value="pattern(5) + &quot;---&quot;"/>
+  <entry key="HISTORY_LINE_239" value="/exi"/>
+  <entry key="HISTORY_LINE_240" value="System.out.println(pattern.pattern(5) + &quot;---&quot;)"/>
+  <entry key="HISTORY_LINE_241" value="/exi"/>
+  <entry key="HISTORY_LINE_242" value="System.out.println(pattern.pattern(5) + &quot;---&quot;)"/>
+  <entry key="HISTORY_LINE_243" value="/ex"/>
+  <entry key="HISTORY_LINE_244" value="/ex"/>
+  <entry key="HISTORY_LINE_245" value="System.out.println(pattern.pattern(5) + &quot;---&quot;)"/>
+  <entry key="HISTORY_LINE_246" value="/exi"/>
+  <entry key="HISTORY_LINE_247" value="/listy"/>
+  <entry key="HISTORY_LINE_248" value="/list"/>
+  <entry key="HISTORY_LINE_249" value="/exi"/>
+  <entry key="HISTORY_LINE_250" value="Voem&lt;Integer&gt; vOk, vFail"/>
+  <entry key="HISTORY_LINE_251" value="vOk = Voem.ok(1)"/>
+  <entry key="HISTORY_LINE_252" value="vOK"/>
+  <entry key="HISTORY_LINE_253" value="vOk"/>
+  <entry key="HISTORY_LINE_254" value="/ex"/>
+  <entry key="HISTORY_LINE_255" value="/exi"/>
+  <entry key="HISTORY_LINE_256" value="Voem&lt;Integer&gt; vOk, vFail"/>
+  <entry key="HISTORY_LINE_257" value="vFail = Voem.fail(&quot;error:)"/>
+  <entry key="HISTORY_LINE_258" value="vFail = Voem.fail(&quot;error&quot;)"/>
+  <entry key="HISTORY_LINE_259" value="/exi"/>
+  <entry key="HISTORY_LINE_260" value="/exi"/>
+  <entry key="HISTORY_LINE_261" value="Voem&lt;Integer&gt; vOk, vFail"/>
+  <entry key="HISTORY_LINE_262" value="vFail = Voem.fail(&quot;error&quot;)"/>
+  <entry key="HISTORY_LINE_263" value="vFail.map(x -&gt; x + 3)"/>
+  <entry key="HISTORY_LINE_264" value="vFail.map(x -&gt; x / 0)"/>
+  <entry key="HISTORY_LINE_265" value="vOK = Voem.ok(1)"/>
+  <entry key="HISTORY_LINE_266" value="vOk = Voem.ok(1)"/>
+  <entry key="HISTORY_LINE_267" value="vOk.map(x -&gt; x / 0)"/>
+  <entry key="HISTORY_LINE_268" value="vOk.map(x -&gt; x + 0)"/>
+  <entry key="HISTORY_LINE_269" value="/ex"/>
+  <entry key="HISTORY_LINE_270" value="Voem&lt;Integer&gt; vOk, vFail"/>
+  <entry key="HISTORY_LINE_271" value="vOk = Voem.ok(1)"/>
+  <entry key="HISTORY_LINE_272" value="vOk.flatMap(x -&gt; Voem.ok(x+3))"/>
+  <entry key="HISTORY_LINE_273" value="/exi"/>
+  <entry key="HISTORY_LINE_274" value="vOk.flatMap(x -&gt; Voem.ok(x+3))"/>
+  <entry key="HISTORY_LINE_275" value="Voem&lt;Integer&gt; vOk, vFail"/>
+  <entry key="HISTORY_LINE_276" value="vOk = Voem.ok(1)"/>
+  <entry key="HISTORY_LINE_277" value="vOk.orElse(3)"/>
+  <entry key="HISTORY_LINE_278" value="vFail = Voem.fail(&quot;error&quot;)"/>
+  <entry key="HISTORY_LINE_279" value="vFail.orElse(6)"/>
+  <entry key="HISTORY_LINE_280" value="/ex"/>
+  <entry key="HISTORY_LINE_281" value="Voem&lt;Integer&gt; vOk, vFail"/>
+  <entry key="HISTORY_LINE_282" value="vFail = Voem.fail(&quot;error&quot;)"/>
+  <entry key="HISTORY_LINE_283" value="vFail.flatMap(x -&gt; Voem.ok(x + 1)\"/>
+  <entry key="HISTORY_LINE_284" value=")"/>
+  <entry key="HISTORY_LINE_285" value="vOk = Voem.ok(1)"/>
+  <entry key="HISTORY_LINE_286" value="vOk.flatMap(x -&gt; Voem.ok(x +1))"/>
+  <entry key="HISTORY_LINE_287" value="/ex"/>
+  <entry key="HISTORY_LINE_288" value="/open pattern.jsh"/>
+  <entry key="HISTORY_LINE_289" value="System.out.print(pattern(8))"/>
+  <entry key="HISTORY_LINE_290" value="System.out.print(pattern(8) + &quot;- &quot;)"/>
+  <entry key="HISTORY_LINE_291" value="/xd"/>
+  <entry key="HISTORY_LINE_292" value="/exi"/>
+  <entry key="HISTORY_LINE_293" value="/open pattern.jsh"/>
+  <entry key="HISTORY_LINE_294" value="System.out.print(pattern(8) + &quot;- &quot;)"/>
+  <entry key="HISTORY_LINE_295" value="/ex"/>
+  <entry key="HISTORY_LINE_296" value="/open pattern.jsh"/>
+  <entry key="HISTORY_LINE_297" value="/ex"/>
+  <entry key="HISTORY_LINE_298" value="/open pattern.jsh"/>
+  <entry key="HISTORY_LINE_299" value="System.out.print(pattern(8) + &quot;- &quot;)"/>
+  <entry key="HISTORY_LINE_300" value="/exi"/>
+  <entry key="HISTORY_LINE_301" value="System.out.print(pattern(8) + &quot;- &quot;)"/>
+  <entry key="HISTORY_LINE_302" value="/open pattern.jsh"/>
+  <entry key="HISTORY_LINE_303" value="System.out.print(pattern(8) + &quot;- &quot;)"/>
+  <entry key="HISTORY_LINE_304" value="System.out.print(pattern(8) + &quot;---&quot;)"/>
+  <entry key="HISTORY_LINE_305" value="System.out.print(pattern(0) + &quot;---&quot;)"/>
+  <entry key="HISTORY_LINE_306" value="/ex"/>
+  <entry key="HISTORY_LINE_307" value="/open pattern.jsh"/>
+  <entry key="HISTORY_LINE_308" value="System.out.print(pattern(0) + &quot;---&quot;)"/>
+  <entry key="HISTORY_LINE_309" value="/ex"/>
+  <entry key="REPLAY_RESTORE" value="String pattern(int n) {&#10;        return Stream.iterate(1, i -&gt; i + 1).limit(n)&#10;            .map(x -&gt; Stream.iterate(x, t -&gt; t &gt;= 1, i -&gt; i - 1)&#10;                .map(s -&gt; s.toString())&#10;                .reduce((f,s) -&gt; f + s).get())&#10;            .collect(Collectors.joining(&quot;\n&quot;,&quot;&quot;,(n == 0) ? &quot;&quot; : &quot;\n&quot;));&#10;}␞System.out.print(pattern(0) + &quot;---&quot;)"/>
+</map>

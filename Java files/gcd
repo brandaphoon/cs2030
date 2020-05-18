@@ -1,0 +1,49 @@
+import java.util.stream.IntStream;
+import java.util.stream.Stream;
+import java.util.stream.Collectors;
+import java.util.function.Function;
+import java.util.ArrayList;
+
+class Pair {
+    private final int first;
+    private final int second;
+
+    public Pair(int f, int s) {
+        this.first = f;
+        this.second = s;
+    }
+
+    public int getF() {
+        return this.first;
+    }
+
+    public int getS() {
+        return this.second;
+    }
+}
+
+class Main {
+
+    static boolean isPrime(int x) {
+        if (x == 0 || x == 1) {
+            return false;
+        }
+        
+        return IntStream.range(2, x).noneMatch(i -> x % i == 0);
+    }
+
+    static int[] twinPrimes(int n) {
+        return IntStream.rangeClosed(1, n)
+            .filter(x -> isPrime(x))
+            .filter(i -> isPrime(i - 2) || isPrime(i + 2))
+            .toArray();
+    }
+
+    static int gcd(int m, int n) {
+        return Stream.iterate(new Pair(m,n),
+            j -> new Pair(j.getS() % j.getF(), j.getF()))
+            .filter(i -> i.getF() == 0)
+            .findFirst().get().getS();
+    }
+    
+}
